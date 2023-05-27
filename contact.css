@@ -1,0 +1,37 @@
+body{
+    background-color: black;
+}
+
+
+.heading{
+   
+    color:greenyellow;
+    margin-left: 640px;
+    margin-top: 15px;
+    font-family:cursive;
+
+}
+
+.heading1{
+    color:aquamarine;
+    margin-left:230px;
+    margin-top: 50px;
+}
+#row1{
+    background-color: skyblue;
+}
+
+
+
+
+#row2{
+    background-color: skyblue;
+}
+
+#row3{
+    background-color: cadetblue;
+}
+#row4{
+    background-color: cadetblue;
+}
+

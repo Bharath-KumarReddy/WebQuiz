@@ -1,0 +1,94 @@
+.body{
+    /* background-color:dimgray; */
+    background-size:cover;
+    
+    background-repeat: repeat-x;
+   background-attachment: fixed;
+   background:url(quiz4.jpg);
+   opacity:1.0;
+  
+}
+
+.container{
+    width:100%;
+    margin-top: 0px;
+    align-items:center;
+    text-align:center;
+    background-color:#c7c7c76e;
+    justify-content:center;
+    
+     
+}
+#hello{
+    font-size: 30px;
+    color:greenyellow;
+    font-family:'Courier New', Courier, monospace
+}
+
+
+.image{
+    opacity: 1;
+
+}
+a{
+    width:100%;
+    text-align: center;
+}
+
+#start{
+    position:relative;
+    align-self: center;
+    margin-top: 220px;
+
+    height: 72px;
+    width:200px;
+   
+}
+
+#start:hover{
+    background-color:#030c1c;
+    letter-spacing: 3px;
+}
+
+a button{
+    position:relative;
+    width:10%;
+    text-align: center;
+    right:27%;
+
+}
+.startq{
+    width:85%;
+    text-align: center;
+    margin-left:130px;
+}
+
+#home{
+    margin-left: 675px;
+}
+
+#home:hover{
+    background-color: darkorange;
+}
+
+#about:hover{
+    background-color: darkorange;
+}
+
+#contact:hover{
+    background-color: darkorange;
+}
+#feedback:hover{
+    background-color: darkorange;
+}
+#galary{
+    position:absolute;
+    margin-top: 43px;
+    margin-left: -100px;
+    margin-right: -63px;
+    background-color: coral;
+}
+
+#galary:hover{
+    background-color: darkorange;
+}

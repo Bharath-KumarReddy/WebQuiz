@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+
+
+.heading{
+    font-size: 40px;
+    margin-left: 680px;
+    color:aquamarine;
+    font-family: cursive;
+    margin-top: 40px;
+}
+
+.heading2{
+    font-size: 30px;
+    margin-top: 60px;
+    margin-left: 100px;
+    color:coral;
+}
+.quiz{
+    color:blueviolet;
+}
+.heading3{
+    font-size: 26px;
+    margin-top: 50px;
+    margin-left: 100px;
+    color:blue;
+}
+.quiz1{
+    color:red;
+}
+.heading4{
+    
+        font-size: 26px;
+        margin-top: 60px;
+        margin-left: 100px;
+        color:blue;
+    
+}
+
+#contact{
+    color:red;
+}
+
+#para{
+    position: absolute;
+    font-size: 24px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.button{
+    position: relative;
+    margin-top:200px;
+    margin-left: 100px;
+}
+
+#para1{
+   position: absolute;
+    font-size: 24px;
+    margin-top: -75px;
+    margin-left: 600px;
+}
+.button1{
+   position:relative;
+  margin-left:600px;
+  margin-top: -40px;
+}
+#contact1{
+    color:white;
+}
+.website{
+    color:aqua;
+}
+

@@ -1,0 +1,1327 @@
+                                    <!-- login page code     11.html    -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+      height: 80vh;
+      border: 2px solid red;
+      justify-content: center;
+      align-items: center;
+    }
+    .container::before {
+      content: "";
+      background: url(/loginpagebackground.jpeg) no-repeat center center/cover;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      opacity: 0.995;
+    }
+    #item1 {
+      display: flex;
+      border: 2px solid red;
+      width: 30vw;
+      height: 55vh;
+      justify-content: center;
+      font-size: 1.4em;
+      margin: 1.2vw;
+    }
+    #item1 input {
+      display: flex;
+      margin: 2vw;
+    }
+    .inputtags {
+      height: 4vh;
+      width: 19vw;
+      padding: 0.2vw;
+      text-align: center;
+      border-radius: 0.5vw;
+      font-size: 1.1vw;
+      background-color:cornsilk;
+    }
+    #loginbtn {
+      height: 6vh;
+      width: 10vw;
+      border-radius: 10px;
+      background-color:skyblue;
+    }
+    #loginbtn:hover {
+      height: 6vh;
+      width: 10vw;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color:rgb(129, 153, 203);
+    }
+   
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <h2>Login Form</h2>
+      </div>
+      <div id="item1">
+        <form action="/2.html" id="loginpage" method="post">
+          <label for="name"
+            >Name :
+            <div>
+              <input
+                type="text"
+                class="inputtags"
+                name="name"
+                id="name"
+                placeholder="enter your Name"
+               />
+            </div>
+          </label>
+          <label for="email"
+            >Email :
+            <div>
+              <input
+                type="email"
+                class="inputtags"
+                name="email"
+                id="email"
+                placeholder="enter your Email "
+              />
+            </div>
+          </label>
+          <label for="password"
+            >Password :
+            <div>
+              <input
+                type="password"
+                class="inputtags"
+                name="password"
+                id="password"
+                placeholder="enter your Password"
+              />
+            </div>
+          </label>
+        </form>
+      </div>
+      <div class="btn">
+        
+          <input type="submit" value="Login" id="loginbtn" onclick="validatepage()"/>
+         
+          <button id="loginbtn" onclick="validateloginpage()">Login</button>
+        
+        
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  
+  function validateloginpage(){
+    
+    let namevalue=document.getElementById("name").value.trim()
+    let emailvalue=document.getElementById("email").value.trim()
+    let passwordvalue=document.getElementById("password").value.trim()
+    if(namevalue===""){
+      alert("please enter the name,this field is required")
+      return 
+    }
+    if(emailvalue===""){
+      alert("enter the email")
+      return 
+    }
+    if(passwordvalue===""){
+      alert("enter the password field")
+      return 
+    }
+    if(!isValidName(namevalue)){
+      alert("name should contain only alphabets")
+      return
+    }
+    if(!isValidEmail(emailvalue)){
+      alert("enter the valid email address")
+      return 
+    }
+    if(!isValidPassword(passwordvalue)){
+      alert("enter the valid password and it should contain at least one lowercase, special character, uppercase and a number")
+      return 
+    }
+else{
+  window.location.replace("http://127.0.0.1:5500/2.html")
+}
+  }
+  function isValidEmail(emailvalue) {
+    const emailexp = /\S+@\S+\.\S+/;
+    return emailexp.test(emailvalue);
+  }
+  function isValidPassword(passwordvalue) {
+    const passwordRegex = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+    return passwordRegex.test(passwordvalue);
+  }
+  function isValidName(namevalue){
+    const nameregex = /^[A-Za-z\s]+$/
+    return nameregex.test(namevalue)
+  }
+  
+
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!-- 2.html code  -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body class="body" >
+    <div class="container">
+    <a href="home.html"> <button class="btn btn-primary mt-5 btn-lg" id="home">HOME</button></a>
+    <a href="/aboutus.html"> <button class="btn btn-info btn-lg" id="about">ABOUT US</button></a>
+     <a href="contact.html"><button class="btn btn-warning mt-5 btn-xl" id="contact">CONTACT US</button></a>
+     <a href="feedback.html"> <button class="btn btn-success btn-lg" id="feedback">FEEDBACK</button></a>
+     <a href="galary.html"> <button class="btn btn-secondary btn-lg" id="galary">GALARY</button></a>
+
+     <marquee scrollamount="15" id="hello">HELLO!!!</marquee>
+    </div>
+  
+ 
+    <div class="startq"><a href="/31.html" style="align-items: center;">
+     <button class="btn btn-primary btn-xxl"  onclick="start()"id="start">START_QUIZ</button>
+     
+    </a></div>
+    <script>
+        function start(){
+            alert("you are going to start the quiz");
+            
+        }
+    </script>
+    
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+                       <!--   2.html   css  -->
+
+
+
+
+
+
+                       
+                       <!-- .body{
+                        /* background-color:dimgray; */
+                        background-size:cover;
+                        
+                        background-repeat: repeat-x;
+                       background-attachment: fixed;
+                       background:url(quiz4.jpg);
+                       opacity:1.0;
+                      
+                    }
+                    
+                    .container{
+                        width:100%;
+                        margin-top: 0px;
+                        align-items:center;
+                        text-align:center;
+                        background-color:#c7c7c76e;
+                        justify-content:center;
+                        
+                         
+                    }
+                    #hello{
+                        font-size: 30px;
+                        color:greenyellow;
+                        font-family:'Courier New', Courier, monospace
+                    }
+                    
+                    
+                    .image{
+                        opacity: 1;
+                    
+                    }
+                    a{
+                        width:100%;
+                        text-align: center;
+                    }
+                    
+                    #start{
+                        position:relative;
+                        align-self: center;
+                        margin-top: 220px;
+                        margin-left: 580px;
+                        height: 72px;
+                        width:200px;
+                       
+                    }
+                    
+                    #start:hover{
+                        background-color:#030c1c;
+                        letter-spacing: 3px;
+                    }
+                    
+                    a button{
+                        position:relative;
+                        width:10%;
+                        text-align: center;
+                        right:27%;
+                    
+                    }
+                    .startq{
+                        width:85%;
+                        text-align: center;
+                        margin-left:130px;
+                    }
+                    
+                    #home{
+                        margin-left: 675px;
+                    }
+                    
+                    #home:hover{
+                        background-color: darkorange;
+                    }
+                    
+                    #about:hover{
+                        background-color: darkorange;
+                    }
+                    
+                    #contact:hover{
+                        background-color: darkorange;
+                    }
+                    #feedback:hover{
+                        background-color: darkorange;
+                    }
+                    #galary{
+                        position:absolute;
+                        margin-top: 43px;
+                        margin-left: -100px;
+                        margin-right: -63px;
+                        background-color: coral;
+                    }
+                    
+                    #galary:hover{
+                        background-color: darkorange;
+                    } -->
+
+
+
+
+
+
+
+
+                                        <!-- 31.html  -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="31.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="body">
+    <h1 class="heading">QUIZ</h1>
+<div class="quiz-container">
+  <div id="quiz"></div>
+</div>
+<button id="previous" class="btn btn-primary btn-lg ">Previous Question</button>
+<button id="next" class="btn btn-success btn-lg ">Next Question</button> 
+<button id="submit" class="btn btn-danger btn-lg ">Submit Quiz</button>
+<div id="results"></div>
+<script src="31.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+                              <!-- 31.css -->
+
+
+
+
+
+
+
+                                            <!-- .body{
+                                                /* background-color:bisque; */
+                                                background:url(qback.jpeg);
+                                                background-attachment:fixed;
+                                                background-size: cover;
+                                                background-repeat: no-repeat;
+                                                color:black
+                                            
+                                            }
+                                            
+                                            
+                                            
+                                            .heading{
+                                                font-size:50px;
+                                                align-self: center;
+                                                margin-left: 675px;
+                                                margin-top: 40px;
+                                                color: red;
+                                            }
+                                            .heading:hover{
+                                                 color: chocolate;
+                                                 letter-spacing: 7px;
+                                            }
+                                            
+                                            
+                                            
+                                            .slide{
+                                                position: absolute;
+                                                left: 0px;
+                                                top: 0px;
+                                                width: 100%;
+                                                z-index: 1;
+                                                opacity: 0;
+                                                transition: opacity 0.5s;
+                                              }
+                                              .active-slide{
+                                                opacity: 1;
+                                                z-index: 2;
+                                              }
+                                              .quiz-container{
+                                                position: relative;
+                                                height: 200px;
+                                                margin-top: 130px;
+                                                font-size: 25px;
+                                                margin-left:510px;
+                                                color:aquamarine
+                                                
+                                              }
+                                            
+                                              #next{
+                                                margin-left:500px;
+                                              }
+                                            
+                                              #previous{
+                                                margin-left: 440px;
+                                              }
+                                            
+                                              #submit{
+                                                margin-left: 470x;
+                                              }
+                                             
+                                              #results{
+                                                color:yellow;
+                                                font-size: 28px;
+                                                margin-top: 130px;
+                                                margin-left: 440px;
+                                              }                                       -->
+
+
+
+
+
+
+
+
+
+
+                                           <!-- 31.js -->
+
+
+
+
+
+
+
+                        <!-- // Functions
+                        function buildQuiz(){
+                            // variable to st
+                            const output = [];
+                        
+                            // for each question...
+                            myQuestions.forEach(
+                              (currentQuestion, questionNumber) => {
+                        
+                                // variable to store the list of possible answers
+                                const answers = [];
+                        
+                                // and for each available answer...
+                                for(letter in currentQuestion.answers){
+                        
+                                  // ...add an HTML radio button
+                                  answers.push(
+                                    `<label>
+                                      <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                                      ${letter} :
+                                      ${currentQuestion.answers[letter]}
+                                    </label> <br>`
+                                  );
+                                }
+                        
+                                // add this question and its answers to the output
+                                output.push(
+                                  `<div class="slide">
+                                    <div class="question"> ${currentQuestion.question} </div>
+                                    <div class="answers"> ${answers.join("")} </div>
+                                  </div>`
+                                );
+                              }
+                            );
+                        
+                            // finally combine our output list into one string of HTML and put it on the page
+                            quizContainer.innerHTML = output.join('');
+                          }
+                        
+                          function showResults(){
+                        
+                            // gather answer containers from our quiz
+                            const answerContainers = quizContainer.querySelectorAll('.answers');
+                        
+                            // keep track of user's answers
+                            let numCorrect = 0;
+                        
+                            // for each question...
+                            myQuestions.forEach( (currentQuestion, questionNumber) => {
+                        
+                              // find selected answer
+                              const answerContainer = answerContainers[questionNumber];
+                              const selector = `input[name=question${questionNumber}]:checked`;
+                              const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+                        
+                              // if answer is correct
+                              if(userAnswer === currentQuestion.correctAnswer){
+                                // add to the number of correct answers
+                                numCorrect++;
+                        
+                                // color the answers green
+                                answerContainers[questionNumber].style.color = 'lightgreen';
+                              }
+                              // if answer is wrong or blank
+                              else{
+                                // color the answers red
+                                answerContainers[questionNumber].style.color = 'red';
+                              }
+                            });
+                        
+                            // show number of correct answers out of total
+                            resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+                          }
+                        
+                          function showSlide(n) {
+                            slides[currentSlide].classList.remove('active-slide');
+                            slides[n].classList.add('active-slide');
+                            currentSlide = n;
+                            if(currentSlide === 0){
+                              previousButton.style.display = 'none';
+                            }
+                            else{
+                              previousButton.style.display = 'inline-block';
+                            }
+                            if(currentSlide === slides.length-1){
+                              nextButton.style.display = 'none';
+                              submitButton.style.display = 'inline-block';
+                            }
+                            else{
+                              nextButton.style.display = 'inline-block';
+                              submitButton.style.display = 'none';
+                            }
+                          }
+                        
+                          function showNextSlide() {
+                            showSlide(currentSlide + 1);
+                          }
+                        
+                          function showPreviousSlide() {
+                            showSlide(currentSlide - 1);
+                          }
+                        
+                          // Variables
+                          const quizContainer = document.getElementById('quiz');
+                          const resultsContainer = document.getElementById('results');
+                          const submitButton = document.getElementById('submit');
+                          const myQuestions = [
+                            {
+                              question: "Who invented JavaScript?",
+                              answers: {
+                                a: "Douglas Crockford",
+                                b: "Sheryl Sandberg",
+                                c: "Brendan Eich",
+                                d: "Jordan Walke"
+                              },
+                              correctAnswer: "c"
+                            }, 
+                            {
+                              question: "Which one of these is a JavaScript package manager?",
+                              answers: {
+                                a: "Node.js",
+                                b: "TypeScript",
+                                c: "npm",
+                                
+                              },
+                              correctAnswer: "c"
+                            },
+                            {
+                              question: "Which tool can you use to ensure code quality?",
+                              answers: {
+                                a: "Angular",
+                                b: "jQuery",
+                                c: "RequireJS",
+                                d: "ESLint"
+                              },
+                              correctAnswer: "d"
+                            }, 
+                            {
+                              question: "Which of the following is used in pencils ?",
+                              answers: {
+                                a: "Graphite",
+                                b: "Silicone",
+                                c: "Charcoal",
+                                d: "Phosphorous"
+                              },
+                              correctAnswer: "a"
+                            } ,
+                            {
+                              question: "Chlorophyll is a naturally occurring chelate compound in which central metal ?",
+                              answers: {
+                                a: "Copper",
+                                b: "Magnesium",
+                                c: "Iron",
+                                d: "Calcium"
+                              },
+                              correctAnswer: "b"
+                            }, 
+                            {
+                              question: "Which of the following class in Bootstrap is used to create a wel?",
+                              answers: {
+                                a: ".wel" ,
+                                b: ".Well",
+                                c: ".well-container",
+                                d: ".container-well"
+                              },
+                              correctAnswer: "b"
+                            } ,
+                            {
+                              question: "How to stop an interval timer in Javascript?",
+                              answers: {
+                                a: "ClearInterval",
+                                b: "ClearTimer",
+                                c: "IntervalOver",
+                                d: "None of the above"
+                              },
+                              correctAnswer: "a"
+                            } , 
+                            {
+                              question: "Which of the following css property is used to describe how the animation will play?",
+                              answers: {
+                                a: "animation-timing-function" ,
+                                b: " css3-timing-function",
+                                c: "transform-timing-function",
+                                d: "transition-timing-function"
+                              },
+                              correctAnswer: "d"
+                            } ,
+                            {
+                              question: " Identify the correct syntax for declaring arrays in C++?",
+                              answers: {
+                                a: "array arr[10]",
+                                b: "array{10}",
+                                c: "int arr[10]",
+                                d: "int arr"
+                              },
+                              correctAnswer: "c"
+                            } 
+                         
+                            
+                             
+                          ];
+                        
+                          // Kick things off
+                          buildQuiz();
+                        
+                          // Pagination
+                          const previousButton = document.getElementById("previous");
+                          const nextButton = document.getElementById("next");
+                          const slides = document.querySelectorAll(".slide");
+                          let currentSlide = 0;
+                        
+                          // Show the first slide
+                          showSlide(currentSlide);
+                        
+                          // Event listeners
+                          submitButton.addEventListener('click', showResults);
+                          previousButton.addEventListener("click", showPreviousSlide);
+                          nextButton.addEventListener("click", showNextSlide); -->
+
+
+
+
+
+
+
+
+
+
+                          
+                                  <!--2.html   home.html -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .home{
+      color:blue;
+      font-family: cursive;
+      font-size: 45px;
+      margin-left: 620px;
+      margin-top: 5px;
+    }
+    .div1{
+        margin-top:30px;
+    }
+    .heading1{
+        color:pink;
+   
+
+    }
+    #red{
+        color:red;
+    }
+
+    body{
+        background-color:black;
+
+    }
+
+    .heading2{
+        color:white;
+      
+    }
+
+    .heading3{
+        color:white;
+    }
+
+    .heading4{
+        color:pink;
+    }
+    .button{
+        width:30%;
+    }
+    #mainpage:hover{
+        color:chocolate;
+        background-color:chartreuse;
+    }
+</style>
+<body>
+
+    <h1 class="home">HOME</h1>
+    <div class="div1">
+        <h2 class="heading1"><span id="red">Welcome to our Quiz!</span> we are conducting a fun and exciting quiz that will test your knowledge and challenge your mind.<br><br>
+         The quiz will cover a wide range of topics including science, history, programming, and more.</h2>
+    </div>  <br><br>  
+
+
+    <div class="div2">
+        <h3 class="heading2">To participate in the quiz, simply answer the questions to the best of your ability.<br><br> Each question will have multiple options to choose from, so make sure to read the question carefully before selecting your answer.</h3>  
+    </div> 
+    
+    
+    <div class="div3 "><h3 class="heading3">At the end of the quiz, we will tally up your score and let you know how you did.<br><br></h3></div> <br><br><br>
+
+    <div class="div4"><h2 class="heading4">So what are you waiting for? Let's <span id="red">get started</span> and see how well you do in our quiz!</h2>
+        </div>
+    
+        <div class="button"><a href="/2.html">
+            <button class="btn btn-warning btn-lg" id="mainpage">MAIN PAGE</button>
+        <a><div></div>
+
+
+</body>
+</html> -->
+
+
+
+
+                         
+
+
+
+
+                                   <!-- 2.html   aboutus.html  -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <h1 class="heading">ABOUT US</h1>
+    <h2 class="heading2">We are conducting a <span class="quiz">QUIZ</span>  To test your knowledge</h2>
+    <h5 class="heading3">We decided to built a <span class="website"> WEBSITE</span> for conducting a<span class="quiz1"> QUIZ . </span>This contains multiple choice questions, so that you need to select an option</h5>
+    <h5 class="heading4">You can contact to us in case of any queries , we already Provided Our Details in <span id="contact">CONTACT US</span>  Page</h5>
+    
+    <p style="color:darkgoldenrod" id="para">Click this to MainPage</p>
+    <div class="button"><a href="/2.html">
+  
+       <button class="btn btn-primary btn-lg" id="mainpage">MAIN PAGE</button>
+   <a><div></div>
+
+    <p style="color:darkgoldenrod" id="para1">Click this to Contact</p>
+    <div class="button1"><a href="/contact.html">
+  
+        <button class="btn btn-primary btn-lg" id="contact1">CONTACT US</button>
+    <a><div></div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+                                            <!--2.html   about.css -->
+
+
+
+
+
+                                            
+
+                                <!-- body{
+                                    background-color: black;
+                                }
+                                
+                                
+                                .heading{
+                                    font-size: 40px;
+                                    margin-left: 680px;
+                                    color:aquamarine;
+                                    font-family: cursive;
+                                    margin-top: 40px;
+                                }
+                                
+                                .heading2{
+                                    font-size: 30px;
+                                    margin-top: 60px;
+                                    margin-left: 100px;
+                                    color:coral;
+                                }
+                                .quiz{
+                                    color:blueviolet;
+                                }
+                                .heading3{
+                                    font-size: 26px;
+                                    margin-top: 50px;
+                                    margin-left: 100px;
+                                    color:blue;
+                                }
+                                .quiz1{
+                                    color:red;
+                                }
+                                .heading4{
+                                    
+                                        font-size: 26px;
+                                        margin-top: 60px;
+                                        margin-left: 100px;
+                                        color:blue;
+                                    
+                                }
+                                
+                                #contact{
+                                    color:red;
+                                }
+                                
+                                #para{
+                                    position: absolute;
+                                    font-size: 24px;
+                                    margin-top: 150px;
+                                    margin-left: 100px;
+                                }
+                                
+                                .button{
+                                    position: relative;
+                                    margin-top:200px;
+                                    margin-left: 100px;
+                                }
+                                
+                                #para1{
+                                   position: absolute;
+                                    font-size: 24px;
+                                    margin-top: -75px;
+                                    margin-left: 600px;
+                                }
+                                .button1{
+                                   position:relative;
+                                  margin-left:600px;
+                                  margin-top: -40px;
+                                }
+                                #contact1{
+                                    color:white;
+                                }
+                                .website{
+                                    color:aqua;
+                                } -->
+                                
+
+
+                             
+
+
+
+
+
+                                <!-- 2.html   contact.html -->
+
+
+
+
+
+
+
+
+<!--  <!DOCTYPE html>
+                                
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<style>
+    .container{
+        position:relative;
+        margin-top: 30px;
+        margin-left: 100px;
+        justify-content: center;
+    }
+    .button{
+        margin-top: 200px;
+        margin-left: 80px;
+    }
+    #para{
+        position:absolute;
+        font-size: 25px;
+        margin-top: 150px;
+        margin-left: 45px;
+       
+    }
+    #green{
+        color:pink;
+    }
+</style>
+
+     
+<body>
+    <h1 class="heading">CONTACT</h1>
+    <h3 class="heading1">::  You can <span id="green">CONTACT US</span> in case of any queries regarding this quiz ::</h3>
+     <div class="container">
+        <table class="table table-stiped table-hover table-bordered">
+            <thead class="bg-white">
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL:</th>
+                    <th>BRANCH</th>
+                </tr>
+            </thead>
+            <tbody  id="row1" >
+                <tr>
+                    <td>BHARATH</td>
+                    <td>LCB2022010@iiitl.ac.in</td>
+                    <td>CSB</td>
+                </tr>
+
+            </tbody>
+            <tbody id="row2" >
+                <tr>
+                    <td>LOKESH</td>
+                    <td>LCI2022015@iiitl.ac.in</td>
+                    <td>CSAI</td>
+                </tr>
+
+            </tbody>
+            <tbody id="row3" >
+                <tr>
+                    <td>ANURAG</td>
+                    <td>LCI2022038@iiitl.ac.in</td>
+                    <td>CSAI</td>
+                </tr>
+
+            </tbody>
+            <tbody id="row4">
+                <tr>
+                    <td>SWAROOP</td>
+                    <td>LCB2022035@iiitl.ac.in</td>
+                    <td>CSB</td>
+                </tr>
+
+            </tbody>
+
+            <tbody id="row5"  class="bg-secondary">
+                <tr>
+                    <td>VITAL</td>
+                    <td>LCB2022044@iiitl.ac.in</td>
+                    <td>CSB</td>
+                </tr>
+
+            </tbody>
+
+            <tbody id="row6" class="bg-secondary">
+                <tr>
+                    <td>SOUMIL</td>
+                    <td>LCB2022011@iiitl.ac.in</td>
+                    <td>CSB</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+     </div>
+    
+     <p style="color:darkgoldenrod" id="para">Click this to MainPage</p>
+     <div class="button"><a href="/2.html">
+   
+        <button class="btn btn-primary btn-lg" id="mainpage">MAIN PAGE</button>
+    <a><div></div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+                                        <!-- 2.html   contact.css -->
+
+
+
+                  
+
+
+
+      <!-- body{
+        background-color: black;
+    }
+    
+    
+    .heading{
+       
+        color:greenyellow;
+        margin-left: 640px;
+        margin-top: 15px;
+        font-family:cursive;
+    
+    }
+    
+    .heading1{
+        color:aquamarine;
+        margin-left:230px;
+        margin-top: 50px;
+    }
+    #row1{
+        background-color: skyblue;
+    }
+    
+    
+    
+    
+    #row2{
+        background-color: skyblue;
+    }
+    
+    #row3{
+        background-color: cadetblue;
+    }
+    #row4{
+        background-color: cadetblue;
+    } -->
+
+
+
+
+
+                           
+
+
+
+
+
+
+                                   <!-- 2.html   feeback.html -->
+
+
+
+
+
+
+
+                                   <!-- <!DOCTYPE html>
+                                   <html lang="en">
+                                   <head>
+                                       <meta charset="UTF-8">
+                                       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                       <title>feedback</title>
+                                       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                                   </head>
+                                   <style>
+                                   
+                                       body{
+                                           background-color: black;
+                                       }
+                                       .feedback{
+                                           color:chartreuse;
+                                           font-family: fantasy;
+                                           font-size: 40px;
+                                           margin-left: 630px;
+                                           margin-top: 25px;
+                                       }
+                                       .heading{
+                                           color:aquamarine;
+                                           font-size: 25px;
+                                       }
+                                     
+                                       #feedback{
+                                           width:100%;
+                                       }
+                                       #para{
+                                           position:absolute;
+                                           margin-top:170px;
+                                           font-size: 23px;
+                                           margin-left: 85px;
+                                   
+                                       }
+                                       #mainpage{
+                                           position:relative;
+                                           margin-top: 120px;
+                                           margin-left: 80px;
+                                       }
+                                   
+                                       #button1{
+                                           position:relative;
+                                           margin-left: 700px;
+                                           margin-top: -50px;
+                                       }
+                                       #para1{
+                                           position:absolute;
+                                           margin-left: 620px;
+                                           margin-top: 20px;
+                                           font-size: 25px;
+                                       }
+                                       #button2{
+                                           position:relative;
+                                           margin-left: 1200px;
+                                           margin-top: -100px;
+                                   
+                                       }
+                                       #para2{
+                                           position:absolute;
+                                           margin-left: 1200px;
+                                           margin-top: -10px;
+                                           font-size: 25px;
+                                       }
+                                   
+                                   </style>
+                                   <body>
+                                       <h2 class="feedback">FEEDBACK</h2>
+                                   
+                                   
+                                   
+                                   
+                                       <div class="container" id="feedback-area">
+                                           <label for="feedback" class="heading" ><span id="heading">Give Us A valid feedback :: </span></label><br><br>
+                                           <textarea id="feedback" name="feedback" rows="10" cols="7" > TYPE HERE </textarea>
+                                       </div>
+                                   
+                                   
+                                   
+                                       <p style="color:darkgoldenrod" id="para">Click this to MainPage</p>
+                                       <div class="button"><a href="/2.html">
+                                     
+                                          <button class="btn btn-primary btn-lg" id="mainpage">MAIN PAGE</button>
+                                      <a><div></div>
+                                   
+                                       <p style="color:darkgoldenrod" id="para1">Click this to submit the feedback</p>
+                                          <button class="btn btn-primary btn-lg" id="button1"  onclick="submit()">SUBMIT</button>
+                                       
+                                          <p style="color:darkgoldenrod" id="para2">Click this to Print</p>
+                                          <button class="btn btn-primary btn-lg" id="button2"  onclick="window.print()">PRINT</button>
+                                   
+                                   
+                                   
+                                          <script>
+                                           function submit(){
+                                           
+                                             alert("your FEEDBACK is submited");  
+                                           }
+                                          </script>
+                                   </body>
+                                   </html> -->
+
+
+
+
+
+
+
+
+
+                                   <!-- <  2.html    galary.html> -->
+
+
+
+
+
+                                   
+
+ <!-- <!DOCTYPE html> -->
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+<style>
+    .mainbody{
+        background-color: black;
+    }
+    .containerright{
+        position:relative;
+        float:right;
+        margin-top: -1500px;
+        margin-left: 200px;
+       
+    }
+
+    .button{
+        position:relative;
+        margin-left: 700px;
+        margin-top: 300px;
+    }
+    #para{
+        position:absolute;
+        margin-left: 680px;
+        margin-top: 250px;
+        font-size: 25px;
+    }
+</style>
+
+</head>
+<body class="mainbody">
+    <div class="containerleft">
+        <div class="d-flex flex-column" >
+            <div class="container1" id="box1"><img src="gal1.png"></div>
+            <div class="container2" id="box2"><img src="gal3.png"></div>
+            <div class="container3" id="box3"><img src="gal5.png"></div>
+            <div class="container4" id="box3"><img src="gal8.png"></div>
+        </div>
+    </div>
+    <div class="containerright">
+        <div class="d-flex flex-column" >
+            <div class="container12" id="box11"><img src="gal4.png"></div>
+            <div class="container22" id="box22"><img src="gal2.png"></div>
+            <div class="container23" id="box23"><img src="gal7.png"></div>
+            <div class="container24" id="box3"><img src="gal9.png"></div>
+        </div>
+    </div>
+
+    <p style="color:darkgoldenrod" id="para">Click this to MainPage</p>
+   <div class="button"><a href="/2.html">
+    <button class="btn btn-warning btn-lg" id="mainpage">MAIN PAGE</button>
+<a><div></div>
+</body>
+</html> -->

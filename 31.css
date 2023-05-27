@@ -1,0 +1,67 @@
+.body{
+    /* background-color:bisque; */
+    background:url(qback.jpeg);
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black
+
+}
+
+
+
+.heading{
+    font-size:50px;
+    align-self: center;
+    margin-left: 675px;
+    margin-top: 40px;
+    color: red;
+}
+.heading:hover{
+     color: chocolate;
+     letter-spacing: 7px;
+}
+
+
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .active-slide{
+    opacity: 1;
+    z-index: 2;
+  }
+  .quiz-container{
+    position: relative;
+    height: 200px;
+    margin-top: 130px;
+    font-size: 25px;
+    margin-left:510px;
+    color:aquamarine
+    
+  }
+
+  #next{
+    margin-left:500px;
+  }
+
+  #previous{
+    margin-left: 440px;
+  }
+
+  #submit{
+    margin-left: 470x;
+  }
+ 
+  #results{
+    color:yellow;
+    font-size: 28px;
+    margin-top: 130px;
+    margin-left: 440px;
+  }
